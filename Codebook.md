@@ -8,30 +8,30 @@ The script performs the following steps:
 1.	Collects the Dataset from the website: It obtains the data set in a zip format and extracts all the contents in a new folder named UCIHARDataset. At the end, it lists all the available documents in the folder. 
 2.	Selects and loads the required documents and assign the corresponding column names: 
 It selects the archives for the Train and Test set, the activity_labels and the features. After, it assigns the column names using the features and activity_labels contents.
-  a.	Loads the Train sets and assign then names: 
-    i.	xtrain for X_train.txt – That contains the data measured in the experiment for the Train group.
-    ii.	ytrain for y_train.txt – That contains the data for the activity performed.
-    iii.	subject_train for subject_train.txt – That contains the information on the subjects that performed the activities.
-  b.	Loads the Test sets and assign then names:
-    i.	xtest for X_test.txt - That contains the data measured in the experiment for the Test group.
-    ii.	ytest for y_test.txt - That contains the data for the activity performed.
-    iii.	subject_test for subject_test.txt- That contains the information on the subjects that performed the activities.
-  c.	Loads the activity labels list:
-    i.	activity_labels for activity_labels.txt – That contains the list of all the activities that were performed by the subjects.
-  d.	Loads the features information:
-     i.	features for features.txt - That contains the list of all the features that were measure during the experiment with the watch.
+* Loads the Train sets and assign then names: 
+  * xtrain for X_train.txt – That contains the data measured in the experiment for the Train group.
+  * ytrain for y_train.txt – That contains the data for the activity performed.
+  * subject_train for subject_train.txt – That contains the information on the subjects that performed the activities.
+* Loads the Test sets and assign then names:
+  * xtest for X_test.txt - That contains the data measured in the experiment for the Test group.
+  * ytest for y_test.txt - That contains the data for the activity performed.
+  * subject_test for subject_test.txt- That contains the information on the subjects that performed the activities.
+* Loads the activity labels list:
+  * activity_labels for activity_labels.txt – That contains the list of all the activities that were performed by the subjects.
+* Loads the features information:
+  * features for features.txt - That contains the list of all the features that were measure during the experiment with the watch.
 3.	Merges the Train and Test sets: It selects the Train and Test sets to merge then and create a unique dataset named mainData.
 4.	Extracts only the measurements on the mean and standard deviation for each measurement: Creates a new set of data named mainData1 that contains all the rows with the columns that include the word mean or std on their variable names (Corresponding measurements).
 5.	Designates each descriptive activity names to name the activities in the data set: Takes the mainData1 and assings the activity name according to the list and the code presented in the activity_labels list.
 6.	Renames the variable: It labels the data set with their descriptive variable names:
-  a.	Column 1 is renamed from “activitynum” to “Activity”
-  b.	Column 2 is renamed from “subjectnum” to “SubjectNumber”
-  c.	All “Acc” in column’s name is replaced by “Accelerometer”
-  d.	All “Gyro” in column’s name is replaced by “Gyroscope”
-  e.	All “Mag” in column’s name is replaced by “Magnitude”
-  f.	All “BodyBody” in column’s name is replaced by “Body”
-  g.	All column names that start with the character “t” are replaced with the word “Time”, leaving the rest of the name unchanged.
-  h.	All columns names that start with the character “f” are replaced with the word “Frequency”, leaving the rest of the name unchanged.
-  i.	All “angle” in column’s name is replaced by “Angle”
+* Column 1 is renamed from “activitynum” to “Activity”
+* Column 2 is renamed from “subjectnum” to “SubjectNumber”
+* All “Acc” in column’s name is replaced by “Accelerometer”
+* All “Gyro” in column’s name is replaced by “Gyroscope”
+* All “Mag” in column’s name is replaced by “Magnitude”
+* All “BodyBody” in column’s name is replaced by “Body”
+* All column names that start with the character “t” are replaced with the word “Time”, leaving the rest of the name unchanged.
+* All columns names that start with the character “f” are replaced with the word “Frequency”, leaving the rest of the name unchanged.
+* All “angle” in column’s name is replaced by “Angle”
 7.	Creates a second, independent tidy data set with the average of each variable for each activity and each subject: Takes the mainData1 set, groups it by subject and activity and takes the mean of each variable. The result is mainDatafinal
 8.	Creates the final data set: It takes the final set mainDatafinal and converts it into a text document.
