@@ -9,12 +9,12 @@ The script performs the following steps:
 2.	Selects and loads the required documents and assign the corresponding column names: 
 It selects the archives for the Train and Test set, the activity_labels and the features. After, it assigns the column names using the features and activity_labels contents.
 * Loads the Train sets and assign then names: 
-  * xtrain for X_train.txt – That contains the data measured in the experiment for the Train group.
-  * ytrain for y_train.txt – That contains the data for the activity performed.
+  * xtrain for X_train.txt – That contains the data measured in the experiment for the Train group. The features included in this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
+  * ytrain for y_train.txt – That contains the data for the activity performed. (One out of following: Walking, Walking upstairs, Walking downstairs, Sitting, Standing and Laying)
   * subject_train for subject_train.txt – That contains the information on the subjects that performed the activities.
 * Loads the Test sets and assign then names:
-  * xtest for X_test.txt - That contains the data measured in the experiment for the Test group.
-  * ytest for y_test.txt - That contains the data for the activity performed.
+  * xtest for X_test.txt - That contains the data measured in the experiment for the Test group. The features included in this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
+  * ytest for y_test.txt - That contains the data for the activity performed. (One out of following: Walking, Walking upstairs, Walking downstairs, Sitting, Standing and Laying)
   * subject_test for subject_test.txt- That contains the information on the subjects that performed the activities.
 * Loads the activity labels list:
   * activity_labels for activity_labels.txt – That contains the list of all the activities that were performed by the subjects.
