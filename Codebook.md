@@ -10,11 +10,11 @@ The script performs the following steps:
 It selects the archives for the Train and Test set, the activity_labels and the features. After, it assigns the column names using the features and activity_labels contents.
 * Loads the Train sets and assign then names: 
   * xtrain for X_train.txt – That contains the data measured in the experiment for the Train group. According to the original data, the features included in this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. (t stands for time)
-  * ytrain for y_train.txt – That contains the data for the activity performed. (One out of following: Walking, Walking upstairs, Walking downstairs, Sitting, Standing and Laying)
+  * ytrain for y_train.txt – That contains the data for the activity performed. (From the following: Walking, Walking upstairs, Walking downstairs, Sitting, Standing and Laying)
   * subject_train for subject_train.txt – That contains the information on the subjects that performed the activities. An identification number.
 * Loads the Test sets and assign then names:
   * xtest for X_test.txt - That contains the data measured in the experiment for the Test group. According to the original data, the features included in this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. (t stands for time)
-  * ytest for y_test.txt - That contains the data for the activity performed. (One out of following: Walking, Walking upstairs, Walking downstairs, Sitting, Standing and Laying)
+  * ytest for y_test.txt - That contains the data for the activity performed. (From the following: Walking, Walking upstairs, Walking downstairs, Sitting, Standing and Laying)
   * subject_test for subject_test.txt- That contains the information on the subjects that performed the activities. An identification number.
 * Loads the activity labels list:
   * activity_labels for activity_labels.txt – That contains the list of all the activities that were performed by the subjects: Walking, Walking upstairs, Walking downstairs, Sitting, Standing and Laying.
